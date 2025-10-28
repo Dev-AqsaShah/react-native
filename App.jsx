@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View, Image, Button } from 'react-native'
+import { StyleSheet, Text, View, Image, Button, Pressable } from 'react-native'
 import React from 'react'
 import { Image } from 'react-native/types_generated/index'
 import { Button } from 'react-native/types_generated/index'
 
 const App = () => {
   return (
-    <View>
+    <View  style={{}}>
       <Text>App</Text>
       <Image 
         style={{width:200, height:300}}
@@ -14,6 +14,10 @@ const App = () => {
       <Button title="Press Me"></Button>
 
       {/* 2nd option for button  */}
+
+      <Pressable style={{padding:10, backgroundColor:"yellow"}} >
+        <Text>Press Me</Text>
+      </Pressable>
     </View>
   )
 }

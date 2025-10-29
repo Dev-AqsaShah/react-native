@@ -5,7 +5,7 @@ import { Button } from 'react-native/types_generated/index'
 
 const App = () => {
   return (
-    <View  style={{}}>
+    <View  style={{width:"100", height:"100%", backgroundColor:"black"}}>
       <Text>App</Text>
       <Image 
         style={{width:200, height:300}}

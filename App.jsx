@@ -4,9 +4,16 @@ import { Image } from 'react-native/types_generated/index'
 import { Button } from 'react-native/types_generated/index'
 
 const App = () => {
+  // const style = {
+  //   container: {
+  //     width: "100%",
+  //     height: "100%",
+  //     backgroundColor: "black"
+  //   }
+  // }
   return (
-    <View  style={{width:"100", height:"100%", backgroundColor:"black"}}>
-      <Text>App</Text>
+    <View  styles={{width:"100", height:"100%", backgroundColor:"black"}}>
+      <Text style={styles.text} >App</Text>
       <Image 
         style={{width:200, height:300}}
         source={{ url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fgirl-coder&psig=AOvVaw0uEe0kMjDge2HmlfIrEnBV&ust=1761410169241000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjBx62ivZADFQAAAAAdAAAAABAE"}} />
@@ -24,4 +31,17 @@ const App = () => {
 
 export default App
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+    height: "100",
+    backgroundColor: "#ffffff"
+  },
+
+  text: {
+    color:"black",
+    fontSize:20,
+    fontWeight:"bold",
+  }
+
+})
